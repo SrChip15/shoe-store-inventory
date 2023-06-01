@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_curve_radius">10dp</dimen>
+    <dimen name="material_max_field_width">488dp</dimen>
+    <dimen name="material_max_button_width">320dp</dimen>
+</resources>
