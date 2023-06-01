@@ -15,4 +15,6 @@
         \nSed non risus. Suspendisse lectus tortor, dignissim
         \nsit amet,adipiscing nec, ultricies sed, dolor."
     </string>
+    <string name="instructions_menu_text">Instructions</string>
+    <string name="shoes_menu_text">Shoes</string>
 </resources>
