@@ -6,4 +6,13 @@
     <string name="login_button_text">Login</string>
     <string name="signup_button_text">Signup</string>
     <string name="email_label_text">Email</string>
+    <string name="welcome_banner_text">Shoe Store Inventory</string>
+    <string name="welcome_text">Hello there, welcome to the shoe store inventory app.
+        \nFor instructions on how to use the app, please click instructions in the options menu.
+    </string>
+    <string name="instructions_banner_text">Instructions</string>
+    <string name="instructions_body_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        \nSed non risus. Suspendisse lectus tortor, dignissim
+        \nsit amet,adipiscing nec, ultricies sed, dolor."
+    </string>
 </resources>
