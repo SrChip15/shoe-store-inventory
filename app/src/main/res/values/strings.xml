@@ -17,4 +17,7 @@
     </string>
     <string name="instructions_menu_text">Instructions</string>
     <string name="shoes_menu_text">Shoes</string>
+    <string name="title_welcome_shoe_store">Welcome</string>
+    <string name="title_login_shoe_store" />
+    <string name="title_instructions_shoe_store">Instructions</string>
 </resources>
