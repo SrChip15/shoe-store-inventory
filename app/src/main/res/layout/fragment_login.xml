@@ -70,31 +70,24 @@
 
         <Button
             android:id="@+id/login_button"
+            style="@style/AppButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:background="@drawable/solid_black_button"
-            android:letterSpacing="0.1"
             android:maxWidth="@dimen/material_max_button_width"
             android:text="@string/login_button_text"
-            android:textAllCaps="false"
-            android:textColor="@android:color/white"
-            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="@+id/password_field"
             app:layout_constraintStart_toStartOf="@+id/password_field"
             app:layout_constraintTop_toBottomOf="@+id/password_field" />
 
         <Button
             android:id="@+id/signup_button"
+            style="@style/TransparentButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:background="@drawable/transparent_black_border_button"
-            android:letterSpacing="0.1"
             android:maxWidth="@dimen/material_max_button_width"
             android:text="@string/signup_button_text"
-            android:textAllCaps="false"
-            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="@+id/password_field"
             app:layout_constraintStart_toStartOf="@+id/password_field"
             app:layout_constraintTop_toBottomOf="@+id/login_button" />
