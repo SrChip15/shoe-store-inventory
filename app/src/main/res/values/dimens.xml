@@ -3,7 +3,8 @@
     <dimen name="button_curve_radius">10dp</dimen>
     <dimen name="material_max_field_width">488dp</dimen>
     <dimen name="material_max_button_width">320dp</dimen>
-    <dimen name="body_text_size">24sp</dimen>
-    <dimen name="banner_text_size">32sp</dimen>
-    <dimen name="medium_margin">16dp</dimen>
+    <dimen name="large_text_size">24sp</dimen>
+    <dimen name="xlarge_text_size">32sp</dimen>
+    <dimen name="medium_spacing">16dp</dimen>
+    <dimen name="medium_text_size">16sp</dimen>
 </resources>

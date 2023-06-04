@@ -20,4 +20,7 @@
     <string name="title_welcome_shoe_store">Welcome</string>
     <string name="title_login_shoe_store" />
     <string name="title_instructions_shoe_store">Instructions</string>
+    <string name="title_shoes_list_shoe_store">Shoes</string>
+    <string name="get_started">Let\'s get started</string>
+    <string name="done">Done</string>
 </resources>
