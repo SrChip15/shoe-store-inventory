@@ -2,6 +2,9 @@ package com.udacity.shoestore.screens.shoes
 
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
@@ -12,7 +15,8 @@ import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoesBinding
 import com.udacity.shoestore.databinding.ItemShoeBinding
 
-class ShoesFragment: Fragment() {
+@Suppress("DEPRECATION", "OVERRIDE_DEPRECATION")
+class ShoesFragment : Fragment() {
 
     private lateinit var binding: FragmentShoesBinding
     private val sharedViewModel: ShoesViewModel by activityViewModels()
@@ -23,6 +27,7 @@ class ShoesFragment: Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_shoes, container, false)
+        setHasOptionsMenu(true)
 
         binding.apply {
             shoesViewModel = sharedViewModel
@@ -31,7 +36,7 @@ class ShoesFragment: Fragment() {
         }
 
         sharedViewModel.shoes.observe(viewLifecycleOwner) { shoeList ->
-            shoeList.map {shoe ->
+            shoeList.map { shoe ->
                 val shoeBinding = ItemShoeBinding.inflate(layoutInflater)
                 shoeBinding.shoe = shoe
                 binding.shoeDisplay.addView(shoeBinding.root)
@@ -45,5 +50,19 @@ class ShoesFragment: Fragment() {
         }
 
         return binding.root
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.logout_menu, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when(item.itemId) {
+            R.id.logout_menu -> {
+                findNavController().navigate(R.id.login_fragment)
+                true
+            }
+           else -> super.onOptionsItemSelected(item)
+        }
     }
 }
