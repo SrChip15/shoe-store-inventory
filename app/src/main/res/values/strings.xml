@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ShoeStore</string>
+    <string name="app_name">Shoe Store</string>
     <string name="email_address_hint">Enter email address</string>
     <string name="password_hint">Enter password</string>
     <string name="password_label_text">Password</string>
@@ -18,7 +18,6 @@
     <string name="instructions_menu_text">Instructions</string>
     <string name="shoes_menu_text">Shoes</string>
     <string name="title_welcome_shoe_store">Welcome</string>
-    <string name="title_login_shoe_store" />
     <string name="title_instructions_shoe_store">Instructions</string>
     <string name="title_shoes_list_shoe_store">Shoes</string>
     <string name="get_started">Let\'s get started</string>
