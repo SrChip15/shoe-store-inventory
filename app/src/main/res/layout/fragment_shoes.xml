@@ -8,7 +8,7 @@
         <variable
             name="shoesViewModel"
             type="com.udacity.shoestore.screens.shoes.ShoesViewModel" />
-        
+
         <variable
             name="shoesFragment"
             type="com.udacity.shoestore.screens.shoes.ShoesFragment" />
@@ -67,9 +67,10 @@
             android:layout_marginBottom="@dimen/medium_spacing"
             android:contentDescription="@string/add_shoe_cd"
             android:src="@drawable/ic_add"
-            app:backgroundTint="@android:color/holo_green_dark"
+            app:backgroundTint="@android:color/black"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@android:color/white" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
