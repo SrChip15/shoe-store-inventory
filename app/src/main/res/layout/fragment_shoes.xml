@@ -32,29 +32,11 @@
             app:layout_constraintVertical_bias="1.0">
 
             <LinearLayout
+                android:id="@+id/shoe_display"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/shoe_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/medium_spacing"
-                    android:fontFamily="@font/roboto"
-                    android:padding="8dp"
-                    android:text="@{shoesViewModel.shoes.get(0).name}"
-                    android:textAlignment="viewStart"
-                    android:textColor="@android:color/black"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
-                    tools:text="Air Jordan" />
-
-                <View
-                    android:id="@+id/divider"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="?android:attr/listDivider" />
+                android:orientation="vertical"
+                tools:ignore="UselessLeaf">
 
             </LinearLayout>
         </ScrollView>

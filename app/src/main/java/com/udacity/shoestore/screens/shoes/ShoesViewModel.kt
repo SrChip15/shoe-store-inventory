@@ -24,15 +24,15 @@ class ShoesViewModel : ViewModel() {
     init {
         _shoes.value = mutableListOf(
             Shoe(
-                name = "Air Jordan",
+                name = "Air Jordan I",
                 company = "Nike",
-                description = "comfy basketball",
+                description = "The first",
                 size = 10.5
             ),
             Shoe(
-                name = "Air Jordan",
+                name = "Kobe 6 Mambacita",
                 company = "Nike",
-                description = "comfy basketball",
+                description = "Equalizer",
                 size = 10.5
             ),
         )
@@ -49,14 +49,6 @@ class ShoesViewModel : ViewModel() {
                 description = shoeDescription.value!!
             )
         )
-        _shoes.value?.map {
-            Timber.i("Name: ${it.name}, Company: ${it.company}, Size: ${it.size}")
-        }
         _addingShoe.value = false
-    }
-
-    override fun onCleared() {
-        super.onCleared()
-        Timber.i("ShoeViewModel destroyed")
     }
 }

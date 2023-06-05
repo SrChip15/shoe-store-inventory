@@ -10,7 +10,7 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoesBinding
-import timber.log.Timber
+import com.udacity.shoestore.databinding.ItemShoeBinding
 
 class ShoesFragment: Fragment() {
 
@@ -32,14 +32,15 @@ class ShoesFragment: Fragment() {
 
         sharedViewModel.shoes.observe(viewLifecycleOwner) { shoeList ->
             shoeList.map {shoe ->
-                Timber.i("Name: ${shoe.name}, Company: ${shoe.company}, Size: ${shoe.size}")
+                val shoeBinding = ItemShoeBinding.inflate(layoutInflater)
+                shoeBinding.shoe = shoe
+                binding.shoeDisplay.addView(shoeBinding.root)
             }
         }
 
         binding.fab.setOnClickListener {
             findNavController().navigate(
                 ShoesFragmentDirections.actionShoesFragmentToShoeDetailFragment()
-
             )
         }
 
