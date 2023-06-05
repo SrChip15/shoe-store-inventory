@@ -32,4 +32,8 @@
     <string name="title_shoe_detail_shoe_store">Shoe Detail</string>
     <string name="cancel_button_text">Cancel</string>
     <string name="save_button_text">Save</string>
+    <string name="unsaved_alert_title">Unsaved Shoe</string>
+    <string name="unsaved_alert_message">You have unsaved changes. Are you sure you want to continue without saving?</string>
+    <string name="unsaved_alert_positive_button_text">Continue</string>
+    <string name="unsaved_alert_negative_button_text">Cancel</string>
 </resources>

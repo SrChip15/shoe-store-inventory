@@ -39,11 +39,16 @@
         tools:layout="@layout/fragment_shoes">
         <action
             android:id="@+id/action_shoes_fragment_to_shoeDetailFragment"
-            app:destination="@id/shoeDetailFragment" />
+            app:destination="@id/shoeDetailFragment"
+            app:popUpTo="@id/shoes_fragment" />
     </fragment>
     <fragment
         android:id="@+id/shoeDetailFragment"
         android:name="com.udacity.shoestore.screens.shoes.ShoeDetailFragment"
         android:label="@string/title_shoe_detail_shoe_store"
-        tools:layout="@layout/fragment_shoe_detail" />
+        tools:layout="@layout/fragment_shoe_detail" >
+        <action
+            android:id="@+id/action_shoeDetailFragment_to_shoes_fragment"
+            app:destination="@id/shoes_fragment" />
+    </fragment>
 </navigation>
