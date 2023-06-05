@@ -2,6 +2,17 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.udacity.shoestore.screens.shoes.ShoesViewModel" />
+
+        <variable
+            name="shoeDetailFragment"
+            type="com.udacity.shoestore.screens.shoes.ShoeDetailFragment" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -28,6 +39,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="text"
                 android:minHeight="48dp"
+                android:text="@={viewModel.shoeName}"
                 app:endIconMode="clear_text" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -47,10 +59,12 @@
             app:layout_constraintTop_toBottomOf="@+id/outlinedNameTextField">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/shoe_company_field"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
                 android:minHeight="48dp"
+                android:text="@={viewModel.shoeCompany}"
                 app:endIconMode="clear_text" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -69,10 +83,12 @@
             app:layout_constraintTop_toBottomOf="@+id/outlinedCompanyTextField">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/shoe_size_field"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
                 android:minHeight="48dp"
+                android:text="@={viewModel.shoeSize}"
                 app:endIconMode="clear_text" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -91,10 +107,12 @@
             app:layout_constraintTop_toBottomOf="@+id/outlinedSizeTextField">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/shoe_description_field"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:text="@={viewModel.shoeDescription}" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
@@ -121,6 +139,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
+            android:onClick="@{() -> viewModel.addShoe()}"
             android:text="@string/save_button_text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
