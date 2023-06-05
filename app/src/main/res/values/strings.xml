@@ -30,4 +30,6 @@
     <string name="shoe_description_hint">Description</string>
     <string name="add_shoe_cd">Add shoe button</string>
     <string name="title_shoe_detail_shoe_store">Shoe Detail</string>
+    <string name="cancel_button_text">Cancel</string>
+    <string name="save_button_text">Save</string>
 </resources>
