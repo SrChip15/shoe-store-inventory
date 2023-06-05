@@ -40,9 +40,6 @@ class ShoeDetailFragment : Fragment() {
             Timber.i(addingShoe.toString())
             if (!addingShoe) {
                 findNavController().navigateUp()
-                // findNavController().navigate(
-                //     ShoeDetailFragmentDirections.actionShoeDetailFragmentToShoesFragment()
-                // )
             }
         }
 
@@ -59,9 +56,6 @@ class ShoeDetailFragment : Fragment() {
         builder.setMessage(getString(R.string.unsaved_alert_message))
         builder.setPositiveButton(getString(R.string.unsaved_alert_positive_button_text)) { _, _ ->
             findNavController().navigateUp()
-            // findNavController().navigate(
-            //     ShoeDetailFragmentDirections.actionShoeDetailFragmentToShoesFragment()
-            // )
         }
         builder.setNegativeButton(getString(R.string.unsaved_alert_negative_button_text)) { dialog, _ ->
             dialog.dismiss()
