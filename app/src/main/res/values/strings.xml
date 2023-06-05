@@ -23,4 +23,11 @@
     <string name="title_shoes_list_shoe_store">Shoes</string>
     <string name="get_started">Let\'s get started</string>
     <string name="done">Done</string>
+    <string name="shoe_name_hint">Shoe name</string>
+    <string name="shoe_name_field_cd">Shoe name field</string>
+    <string name="shoe_company_hint">Company</string>
+    <string name="shoe_size_hint">Size</string>
+    <string name="shoe_description_hint">Description</string>
+    <string name="add_shoe_cd">Add shoe button</string>
+    <string name="title_shoe_detail_shoe_store">Shoe Detail</string>
 </resources>
