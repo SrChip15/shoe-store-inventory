@@ -21,16 +21,23 @@ class LoginFragment : Fragment() {
     ): View {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_login, container, false)
         binding.loginButton.setOnClickListener {
+            clearFields()
             findNavController().navigate(
                 LoginFragmentDirections.actionLoginFragmentToWelcomeFragment()
             )
         }
         binding.signupButton.setOnClickListener {
+            clearFields()
             findNavController().navigate(
                 LoginFragmentDirections.actionLoginFragmentToWelcomeFragment()
             )
         }
 
         return binding.root
+    }
+
+    private fun clearFields() {
+        binding.emailField.text?.clear()
+        binding.passwordField.text?.clear()
     }
 }
