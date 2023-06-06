@@ -15,7 +15,7 @@ The app consists of five screens and they are as follows.
 ## Key Libraries
 
 * Material
-* Navigation
+* Navigation Component
 * Timber
 
 ## Screenshots
