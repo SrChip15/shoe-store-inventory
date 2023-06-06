@@ -11,7 +11,11 @@
         tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_login_fragment_to_welcome_fragment"
-            app:destination="@id/welcome_fragment" />
+            app:destination="@id/welcome_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/welcome_fragment"
@@ -20,7 +24,11 @@
         tools:layout="@layout/fragment_welcome">
         <action
             android:id="@+id/action_welcome_fragment_to_instructions_fragment"
-            app:destination="@id/instructions_fragment" />
+            app:destination="@id/instructions_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/instructions_fragment"
@@ -30,6 +38,10 @@
         <action
             android:id="@+id/action_instructions_fragment_to_shoes_fragment"
             app:destination="@id/shoes_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
             app:popUpTo="@id/login_fragment" />
     </fragment>
     <fragment
@@ -40,6 +52,10 @@
         <action
             android:id="@+id/action_shoes_fragment_to_shoeDetailFragment"
             app:destination="@id/shoeDetailFragment"
+            app:enterAnim="@anim/slide_in_top"
+            app:exitAnim="@anim/slide_out_top"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_out_top"
             app:popUpTo="@id/shoes_fragment" />
     </fragment>
     <fragment
