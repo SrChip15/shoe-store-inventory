@@ -19,4 +19,6 @@ The app consists of five screens and they are as follows.
 * Timber
 
 ## Screenshots
+<img src="screenshots/login.png" width="200"/> <img src="screenshots/welcome.png" width="200"/> <img src="screenshots/instructions.png" width="200"/> 
 
+<img src="screenshots/shoe_listing.png" width="200"/> <img src="screenshots/shoe_detail.png" width="200"/>
