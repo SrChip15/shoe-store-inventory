@@ -10,6 +10,13 @@
             type="com.udacity.shoestore.models.Shoe" />
     </data>
 
+    <!--
+       Below is the layout for shoe items.
+       This is not a simple layout as it involves placing views horizontally and vertically.
+       Without a `ConstraintLayout` this would be a nested layout, which is bad practice (elaborated
+       in `fragment_shoes.xml`). Hence, my reason behind choosing the highly efficient and performant
+       `ConstraintLayout`.
+       -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

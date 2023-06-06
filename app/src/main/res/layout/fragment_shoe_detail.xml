@@ -13,6 +13,9 @@
             type="com.udacity.shoestore.screens.shoes.ShoeDetailFragment" />
     </data>
 
+    <!-- This layout requires placing its children in the centre and also placing the buttons
+       with a bias towards the bottom of the screen. These criteria make it a strong contender for
+       `ConstraintLayout` -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

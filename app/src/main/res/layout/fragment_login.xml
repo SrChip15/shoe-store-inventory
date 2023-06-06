@@ -2,6 +2,9 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <!-- The central placement of the fields and buttons is quite important here.
+       For views that require specific offsets or placing themselves relative to their
+        parent, `ConstraintLayout` works best and makes it adaptive to different screens -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

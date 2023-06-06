@@ -2,6 +2,9 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <!-- This is actually a simple layout. However, the button placement makes it a bit
+       trickier. So to make this layout work and make it adaptive to different screens I have
+       used `ConstraintLayout` -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

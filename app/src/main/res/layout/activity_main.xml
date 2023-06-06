@@ -22,6 +22,7 @@
 
         </com.google.android.material.appbar.AppBarLayout>
 
+        <!-- Nav Host Container to host all the fragments from inside a single activity (MainActivity) -->
         <fragment
             android:id="@+id/nav_host_fragment"
             android:name="androidx.navigation.fragment.NavHostFragment"
